@@ -1,26 +1,146 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM: Tactile Editorial
+   Palette: Forest #0A210F, Cream #E5DCC5, 
+            Linen #F8F5F2, Charcoal #1A1A1A
+   ═══════════════════════════════════════════ */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --forest: #0A210F;
+  --cream: #E5DCC5;
+  --linen: #F8F5F2;
+  --charcoal: #1A1A1A;
+  --border: #D1CDC7;
+  --text-secondary: #5C5C5C;
+  --cursor-size: 24px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #D1CDC7 #F8F5F2;
+  }
+
+  body {
+    @apply bg-linen text-charcoal font-body;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Restore default cursor on mobile */
+  @media (max-width: 1024px) {
+    body { cursor: auto; }
+  }
+
+  ::selection {
+    background: #0A210F;
+    color: #E5DCC5;
+  }
+
+  /* Typography rhythm */
+  h1, h2, h3, h4, h5 {
+    @apply font-editorial;
+    text-wrap: balance;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* ── Film Grain Overlay ────────────────── */
+  .grain-overlay::before {
+    content: "";
+    position: fixed;
+    top: -200%;
+    left: -200%;
+    width: 400%;
+    height: 400%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    animation: grain 0.5s steps(1) infinite;
+    mix-blend-mode: multiply;
+  }
+
+  /* ── Section Spacing System ───────────── */
+  .section-pad {
+    padding-top: clamp(100px, 12vw, 180px);
+    padding-bottom: clamp(100px, 12vw, 180px);
+  }
+
+  .section-pad-sm {
+    padding-top: clamp(60px, 8vw, 120px);
+    padding-bottom: clamp(60px, 8vw, 120px);
+  }
+
+  /* ── Mono Data Tag ────────────────────── */
+  .data-tag {
+    @apply font-mono text-xs uppercase tracking-[0.15em] text-charcoal-200;
+  }
+
+  /* ── Editorial Divider ────────────────── */
+  .editorial-line {
+    @apply w-full h-px;
+    background: linear-gradient(90deg, transparent, #D1CDC7 15%, #D1CDC7 85%, transparent);
+  }
+
+  /* ── Number Outline Style ─────────────── */
+  .number-outline {
+    @apply font-editorial font-bold;
+    -webkit-text-stroke: 1.5px currentColor;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1;
+  }
+
+  /* ── Vertical Text ────────────────────── */
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
+
+  /* ── Marquee ──────────────────────────── */
+  .marquee-track {
+    @apply flex whitespace-nowrap;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .leading-editorial {
+    line-height: 1.8;
+  }
+
+  .letter-wide {
+    letter-spacing: 0.05em;
+  }
+}
+
+/* ── Scrollbar ─────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F8F5F2; }
+::-webkit-scrollbar-thumb { background: #D1CDC7; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #A89B68; }
+
+/* ── Focus styles ──────────────────────── */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #0A210F;
+  outline-offset: 4px;
 }

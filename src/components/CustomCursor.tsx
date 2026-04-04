@@ -85,7 +85,7 @@ export default function CustomCursor() {
           <motion.span
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="text-[9px] font-mono uppercase tracking-[0.15em] text-black font-semibold text-center leading-tight"
+            className="text-[9px] font-body uppercase tracking-[0.15em] text-black font-semibold text-center leading-tight"
           >
             {hoverText}
           </motion.span>

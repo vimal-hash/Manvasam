@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const editorial = Playfair_Display({
@@ -10,31 +10,17 @@ const editorial = Playfair_Display({
   style: ["normal", "italic"],
 });
 
-const satoshi = DM_Sans({
+const body = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-satoshi",
+  variable: "--font-body",
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
-  display: "swap",
-  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
   title: "Manvasam — Industrial Coconut Products for Global Markets",
   description:
     "Premium desiccated coconut, coconut chips, oils & derivatives. 33+ years of vertically integrated supply from Tamil Nadu to the world.",
-  keywords: [
-    "desiccated coconut manufacturer",
-    "coconut chips exporter",
-    "B2B coconut supplier India",
-    "industrial coconut products",
-    "coconut oil bulk",
-  ],
 };
 
 export default function RootLayout({
@@ -43,10 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${editorial.variable} ${satoshi.variable} ${jetbrains.variable}`}
-    >
+    <html lang="en" className={`${editorial.variable} ${body.variable}`}>
       <body className="grain-overlay">{children}</body>
     </html>
   );

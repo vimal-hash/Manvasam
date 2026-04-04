@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ═══════════════════════════════════════════
-   DESIGN SYSTEM: Tactile Editorial
-   Palette: Forest #0A210F, Cream #E5DCC5, 
-            Linen #F8F5F2, Charcoal #1A1A1A
-   ═══════════════════════════════════════════ */
-
 :root {
   --forest: #0A210F;
   --cream: #E5DCC5;
@@ -15,19 +9,21 @@
   --charcoal: #1A1A1A;
   --border: #D1CDC7;
   --text-secondary: #5C5C5C;
-  --cursor-size: 24px;
 }
 
 @layer base {
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
   }
 
   html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #D1CDC7 #F8F5F2;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -36,7 +32,6 @@
     cursor: none;
   }
 
-  /* Restore default cursor on mobile */
   @media (max-width: 1024px) {
     body { cursor: auto; }
   }
@@ -46,7 +41,6 @@
     color: #E5DCC5;
   }
 
-  /* Typography rhythm */
   h1, h2, h3, h4, h5 {
     @apply font-editorial;
     text-wrap: balance;
@@ -54,7 +48,6 @@
 }
 
 @layer components {
-  /* ── Film Grain Overlay ────────────────── */
   .grain-overlay::before {
     content: "";
     position: fixed;
@@ -69,45 +62,47 @@
     mix-blend-mode: multiply;
   }
 
-  /* ── Section Spacing System ───────────── */
   .section-pad {
-    padding-top: clamp(100px, 12vw, 180px);
-    padding-bottom: clamp(100px, 12vw, 180px);
+    padding-top: clamp(80px, 10vw, 160px);
+    padding-bottom: clamp(80px, 10vw, 160px);
   }
 
   .section-pad-sm {
-    padding-top: clamp(60px, 8vw, 120px);
-    padding-bottom: clamp(60px, 8vw, 120px);
+    padding-top: clamp(48px, 6vw, 100px);
+    padding-bottom: clamp(48px, 6vw, 100px);
   }
 
-  /* ── Mono Data Tag ────────────────────── */
+  /* Data tag uses DM Sans (body font) with tracking */
   .data-tag {
-    @apply font-mono text-xs uppercase tracking-[0.15em] text-charcoal-200;
+    @apply font-body text-xs uppercase tracking-[0.12em] text-charcoal-200 font-medium;
   }
 
-  /* ── Editorial Divider ────────────────── */
   .editorial-line {
     @apply w-full h-px;
     background: linear-gradient(90deg, transparent, #D1CDC7 15%, #D1CDC7 85%, transparent);
   }
 
-  /* ── Number Outline Style ─────────────── */
   .number-outline {
     @apply font-editorial font-bold;
     -webkit-text-stroke: 1.5px currentColor;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: clamp(2.5rem, 4vw, 4rem);
     line-height: 1;
   }
 
-  /* ── Vertical Text ────────────────────── */
+  /* Filled number style (not stroke) */
+  .number-filled {
+    @apply font-editorial font-bold;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1;
+  }
+
   .vertical-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
   }
 
-  /* ── Marquee ──────────────────────────── */
   .marquee-track {
     @apply flex whitespace-nowrap;
     animation: marquee 30s linear infinite;
@@ -119,28 +114,17 @@
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .leading-editorial {
-    line-height: 1.8;
-  }
-
-  .letter-wide {
-    letter-spacing: 0.05em;
-  }
+  .text-balance { text-wrap: balance; }
+  .leading-editorial { line-height: 1.75; }
+  .letter-wide { letter-spacing: 0.04em; }
 }
 
-/* ── Scrollbar ─────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #F8F5F2; }
 ::-webkit-scrollbar-thumb { background: #D1CDC7; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #A89B68; }
 
-/* ── Focus styles ──────────────────────── */
-a:focus-visible,
-button:focus-visible {
+a:focus-visible, button:focus-visible {
   outline: 2px solid #0A210F;
   outline-offset: 4px;
 }

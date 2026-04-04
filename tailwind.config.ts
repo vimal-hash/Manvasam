@@ -52,8 +52,8 @@ const config: Config = {
       },
       fontFamily: {
         editorial: ["var(--font-editorial)", "Georgia", "serif"],
-        body: ["var(--font-satoshi)", "system-ui", "sans-serif"],
-        mono: ["var(--font-jetbrains)", "monospace"],
+        body: ["var(--font-body)", "system-ui", "sans-serif"],
+        mono: ["var(--font-body)", "system-ui", "sans-serif"],
       },
       fontSize: {
         "display-hero": ["clamp(3rem, 10vw, 9rem)", { lineHeight: "0.92", letterSpacing: "-0.03em" }],

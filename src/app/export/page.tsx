@@ -39,7 +39,7 @@ function PageHero() {
     <section ref={ref} className="relative h-[60vh] sm:h-[65vh] lg:h-[70vh] overflow-hidden">
       <motion.div className="absolute inset-0" style={{ scale: imageScale }}>
         <Image
-          src="/images/factory-line.png"
+          src="/logistics.jpg"
           alt="Manvasam export facility — packaging and logistics"
           fill
           className="object-cover"
@@ -235,7 +235,7 @@ function ExportCapabilities() {
             className="relative overflow-hidden border border-linen-400"
           >
             <Image
-              src="/images/hero-coconut.png"
+              src="/product-jpeg.jpg"
               alt="Export packaging — bulk coconut products"
               fill
               className="object-cover"
@@ -333,7 +333,7 @@ function LogisticsAndPackaging() {
               className="mt-8 aspect-[16/9] relative overflow-hidden border border-cream/5"
             >
               <Image
-                src="/images/sustainable-coconut.png"
+                src="/pack1.webp"
                 alt="Sea freight logistics — coconut export"
                 fill
                 className="object-cover"
@@ -389,7 +389,7 @@ function LogisticsAndPackaging() {
               className="mt-8 aspect-[16/9] relative overflow-hidden border border-cream/5"
             >
               <Image
-                src="/images/vision-products.png"
+                src="/pack1.webp"
                 alt="Hygienic packaging process — export-grade materials"
                 fill
                 className="object-cover"

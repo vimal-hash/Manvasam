@@ -6,15 +6,15 @@ import { fadeUp, stagger, scaleReveal, lineReveal } from "@/lib/animations";
 
 const products = [
   {
-    title: "Coconut Oil", subtitle: "Virgin, Cold-Pressed, Refined", image: "/images/coconut-oil.png",
+    title: "Coconut Oil", subtitle: "Virgin, Cold-Pressed, Refined", image: "/rectangle_45.jpg",
     specs: [{ label: "Moisture", value: "≤0.1%" }, { label: "Free Fatty Acid", value: "≤0.2%" }, { label: "Purity", value: "99.8%" }],
   },
   {
-    title: "Desiccated Coconut", subtitle: "Fine, Medium & Coarse Grade", image: "/images/desiccated-coconut.png",
+    title: "Desiccated Coconut", subtitle: "Fine, Medium & Coarse Grade", image: "/rectangle_46.jpg",
     specs: [{ label: "Moisture", value: "≤3%" }, { label: "Fat Content", value: "60–65%" }, { label: "Shelf Life", value: "12 months" }],
   },
   {
-    title: "Coconut Milk & Cream", subtitle: "Premium Extraction", image: "/images/coconut-milk.png",
+    title: "Coconut Milk & Cream", subtitle: "Premium Extraction", image: "/rectangle_50.jpg",
     specs: [{ label: "Fat Content", value: "17–24%" }, { label: "Shelf Life", value: "18 months" }, { label: "Additives", value: "None" }],
   },
 ];

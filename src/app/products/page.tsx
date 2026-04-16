@@ -31,7 +31,7 @@ const products = [
     title: "Coconut Oil",
     subtitle: "Virgin, Cold-Pressed, Refined",
     desc: "High-quality coconut oil produced from selected coconuts, available in multiple variants to suit food, personal care, and industrial applications.",
-    image: "/images/coconut-oil.png",
+    image: "/rectangle_42.jpg",
     tags: ["Food Grade", "Personal Care", "Industrial"],
     specs: [
       { label: "Moisture", value: "≤0.1%" },
@@ -44,7 +44,7 @@ const products = [
     title: "Desiccated Coconut",
     subtitle: "Fine, Medium & Coarse Grade",
     desc: "Finely grated and dried coconut with natural taste and aroma, ideal for bakeries, confectionery, and food processing industries.",
-    image: "/images/desiccated-coconut.png",
+    image: "/rectangle_44.jpg",
     tags: ["Bakery", "Confectionery", "Food Processing"],
     specs: [
       { label: "Moisture", value: "≤3%" },
@@ -57,7 +57,7 @@ const products = [
     title: "Coconut Milk & Cream",
     subtitle: "Premium Extraction",
     desc: "Rich and smooth coconut extracts made from fresh kernels, perfect for culinary use, beverages, and ready-to-eat products.",
-    image: "/images/coconut-milk.png",
+    image: "/rectangle_45.jpg",
     tags: ["Culinary", "Beverages", "Ready-to-Eat"],
     specs: [
       { label: "Fat Content", value: "17–24%" },
@@ -70,7 +70,7 @@ const products = [
     title: "Coconut Water",
     subtitle: "Natural & Refreshing",
     desc: "Naturally refreshing beverage with essential electrolytes, suitable for hydration drinks and health-focused products.",
-    image: "/images/hero-coconut.png",
+    image: "/rectangle_46.jpg",
     tags: ["Hydration", "Health", "Beverages"],
     specs: [
       { label: "Potassium", value: "~600mg/330ml" },
@@ -83,7 +83,7 @@ const products = [
     title: "Coconut Flour & Sugar",
     subtitle: "Natural Alternatives",
     desc: "Natural and minimally processed alternatives, ideal for health-conscious food brands and baking applications.",
-    image: "/images/categories.png",
+    image: "/aerial-coconut-palm.png",
     tags: ["Gluten-Free", "Baking", "Health Foods"],
     specs: [
       { label: "Processing", value: "Minimal" },
@@ -96,7 +96,7 @@ const products = [
     title: "Activated Charcoal",
     subtitle: "From Coconut Shell",
     desc: "Eco-friendly charcoal with high absorption properties, widely used in filtration, cosmetics, and industrial applications.",
-    image: "/images/sustainable-coconut.png",
+    image: "/rectangle_40.jpg",
     tags: ["Filtration", "Cosmetics", "Industrial"],
     specs: [
       { label: "Absorption", value: "High" },
@@ -109,7 +109,7 @@ const products = [
     title: "Coconut Shell Handicrafts",
     subtitle: "Sustainable Décor",
     desc: "Sustainable handcrafted products made from coconut shells, perfect for home décor and eco-friendly lifestyle items.",
-    image: "/images/palm-grove.png",
+    image: "/rectangle_51.png",
     tags: ["Home Décor", "Eco-Friendly", "Handcrafted"],
     specs: [
       { label: "Material", value: "Coconut Shell" },
@@ -122,7 +122,7 @@ const products = [
     title: "Coir Products",
     subtitle: "Ropes, Mats & Brushes",
     desc: "Durable and biodegradable products made from coconut fibers, suitable for agriculture, construction, and daily use.",
-    image: "/images/worker-back.png",
+    image: "/eco-envi.jpg",
     tags: ["Agriculture", "Construction", "Biodegradable"],
     specs: [
       { label: "Fiber", value: "Coconut Coir" },

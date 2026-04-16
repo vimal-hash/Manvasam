@@ -24,7 +24,7 @@ function PageHero() {
   return (
     <section ref={ref} className="relative h-[55vh] sm:h-[60vh] lg:h-[65vh] overflow-hidden">
       <motion.div className="absolute inset-0" style={{ scale: imageScale }}>
-        <Image src="/images/about-hero-grove.png" alt="Coconut palm grove — Manvasam plantation" fill className="object-cover object-top" priority sizes="100vw" />
+        <Image src="/aerial-coconut-palm.png" alt="Coconut palm grove — Manvasam plantation" fill className="object-cover object-top" priority sizes="100vw" />
       </motion.div>
       <motion.div className="absolute inset-0 bg-forest" style={{ opacity: overlayOpacity }} />
       <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +150,7 @@ function SolutionsAndQuality() {
 
             <motion.div className="lg:col-span-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeRight}>
               <div className="aspect-[4/5] relative overflow-hidden rounded-2xl border border-linen-400">
-                <Image src="/images/about-farmer-coconut.png" alt="Farmer harvesting coconuts" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+                <Image src="/rectangle_51.png" alt="Farmer harvesting coconuts" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
               </div>
             </motion.div>
           </div>
@@ -162,7 +162,7 @@ function SolutionsAndQuality() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             <motion.div className="lg:col-span-6 order-2 lg:order-1" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeLeft}>
               <div className="aspect-[4/5] relative overflow-hidden rounded-2xl border border-linen-400">
-                <Image src="/images/about-quality-tree.png" alt="Coconut harvester — quality sourcing" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+                <Image src="/rectangle_41.jpg" alt="Coconut harvester — quality sourcing" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
               </div>
             </motion.div>
 
@@ -198,11 +198,11 @@ function SolutionsAndQuality() {
 
 /* ═══ MANUFACTURING PRODUCTS ═══ */
 const products = [
-  { title: "Coconut Oil", subtitle: "Virgin, Cold-Pressed, Refined", image: "/images/coconut-oil.png",
+  { title: "Coconut Oil", subtitle: "Virgin, Cold-Pressed, Refined", image: "/rectangle_45.jpg",
     specs: [{ label: "Moisture", value: "≤0.1%" }, { label: "FFA", value: "≤0.2%" }, { label: "Purity", value: "99.8%" }] },
-  { title: "Desiccated Coconut", subtitle: "Fine, Medium & Coarse", image: "/images/desiccated-coconut.png",
+  { title: "Desiccated Coconut", subtitle: "Fine, Medium & Coarse", image: "/rectangle_46.jpg",
     specs: [{ label: "Moisture", value: "≤3%" }, { label: "Fat", value: "60–65%" }, { label: "Shelf", value: "12 mo" }] },
-  { title: "Coconut Milk & Cream", subtitle: "Premium Extraction", image: "/images/coconut-milk.png",
+  { title: "Coconut Milk & Cream", subtitle: "Premium Extraction", image: "/rectangle_50.jpg",
     specs: [{ label: "Fat", value: "17–24%" }, { label: "Shelf", value: "18 mo" }, { label: "Additives", value: "None" }] },
 ];
 

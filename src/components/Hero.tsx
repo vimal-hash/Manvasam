@@ -75,7 +75,7 @@ export default function Hero() {
           <motion.div className="lg:col-span-7 xl:col-span-8 relative lg:absolute lg:right-0 lg:top-[10%] lg:w-[52%] xl:w-[48%] z-10" style={{ y: imageY }}
             initial={{ opacity: 0, x: 80, scale: 0.96 }} animate={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}>
             <div className="aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] relative overflow-hidden">
-              <Image src="/images/hero-coconut.png" alt="Premium desiccated coconut and whole coconuts" fill className="object-cover object-center" priority sizes="(max-width: 1024px) 100vw, 52vw" />
+              <Image src="/rectangle-43.png" alt="Premium desiccated coconut and whole coconuts" fill className="object-cover object-center" priority sizes="(max-width: 1024px) 100vw, 52vw" />
               <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-linen via-linen/50 to-transparent hidden lg:block" />
               <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-linen to-transparent" />
             </div>

@@ -55,7 +55,7 @@ export default function Sustainability() {
           {/* FIX: Larger image with rounded corners */}
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeLeft}>
             <div className="aspect-[4/3] relative overflow-hidden rounded-2xl border border-forest/10">
-              <Image src="/images/sustainable-coconut.png" alt="Sustainable coconut sourcing" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src="/rectangle_47.png" alt="Sustainable coconut sourcing" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
           </motion.div>
 

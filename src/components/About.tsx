@@ -70,7 +70,7 @@ export default function About() {
             <div className="flex gap-3 sm:gap-4">
               <motion.div variants={fadeLeft} className="w-1/2" style={{ y: parallaxImage }}>
                 <div className="aspect-[3/4] relative overflow-hidden rounded-xl border border-linen-400">
-                  <Image src="/images/palm-grove.png" alt="Coconut palm grove in Tamil Nadu" fill className="object-cover grayscale-[15%]" sizes="25vw" />
+                  <Image src="/rectangle_41.jpg" alt="Coconut palm grove in Tamil Nadu" fill className="object-cover grayscale-[15%]" sizes="25vw" />
                 </div>
                 <motion.div variants={fadeUp} className="mt-3 sm:mt-4 p-3 sm:p-4 rounded-xl border border-linen-400 bg-white">
                   <div className="number-filled text-forest text-3xl sm:text-4xl">33+</div>
@@ -80,7 +80,7 @@ export default function About() {
 
               <motion.div variants={fadeRight} className="w-1/2 mt-10 lg:mt-14">
                 <div className="aspect-[3/4] relative overflow-hidden rounded-xl border border-linen-400">
-                  <Image src="/images/worker-back.png" alt="Manvasam coconut plantation worker" fill className="object-cover grayscale-[15%]" sizes="25vw" />
+                  <Image src="/rectangle_42.jpg" alt="Manvasam coconut plantation worker" fill className="object-cover grayscale-[15%]" sizes="25vw" />
                 </div>
               </motion.div>
             </div>

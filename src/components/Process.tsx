@@ -42,7 +42,7 @@ export default function Process() {
             <motion.div className="lg:col-span-5 relative" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeLeft}>
               <motion.div style={{ y: imageParallax }} className="relative">
                 <div className="aspect-[4/5] relative overflow-hidden rounded-xl border border-forest-400/30">
-                  <Image src="/images/factory-line.png" alt="Manvasam coconut processing facility" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 40vw" />
+                  <Image src="/eco-envi.jpg" alt="Manvasam coconut processing facility" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 40vw" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 lg:p-6 rounded-b-xl bg-gradient-to-t from-forest via-forest/80 to-transparent">
                   <div className="font-body text-[10px] uppercase tracking-[0.12em] text-cream/50 font-medium">Production Capacity</div>
@@ -65,10 +65,10 @@ export default function Process() {
 
               <motion.div variants={fadeUp} className="mt-8 grid grid-cols-2 gap-3">
                 <div className="aspect-square relative overflow-hidden rounded-lg border border-forest-400/20">
-                  <Image src="/images/coconut-halves.png" alt="Fresh coconut halves" fill className="object-cover hover:scale-105 transition-transform duration-700" sizes="20vw" />
+                  <Image src="/rectangle_40.jpg" alt="Fresh coconut halves" fill className="object-cover hover:scale-105 transition-transform duration-700" sizes="20vw" />
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg border border-forest-400/20">
-                  <Image src="/images/coconut-pieces.png" alt="Processed coconut chips" fill className="object-cover hover:scale-105 transition-transform duration-700" sizes="20vw" />
+                  <Image src="/rectangle_44.jpg" alt="Processed coconut chips" fill className="object-cover hover:scale-105 transition-transform duration-700" sizes="20vw" />
                 </div>
               </motion.div>
             </motion.div>

@@ -62,9 +62,9 @@ export default function About() {
           >
             {/* FIX: "About Manvasam" centered above images instead of left side */}
             <motion.div variants={fadeUp} className="text-center mb-5">
-              <span className="font-body text-[10px] sm:text-xs uppercase tracking-[0.2em] text-linen-400 font-medium">
+              {/* <span className="font-body text-[10px] sm:text-xs uppercase tracking-[0.2em] text-linen-400 font-medium">
                 About Manvasam
-              </span>
+              </span> */}
             </motion.div>
 
             <div className="flex gap-3 sm:gap-4">

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
+import Image from "next/image";
 const links = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
@@ -52,9 +52,12 @@ export default function Header({ currentPage = "/" }: HeaderProps) {
           {/* Logo — SVG M box + Manvasam text */}
           <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group" data-cursor="HOME">
             <div className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-md bg-forest flex items-center justify-center group-hover:bg-forest-400 transition-colors duration-500">
-              <svg viewBox="0 0 24 24" className="w-5 h-5 sm:w-5.5 sm:h-5.5 lg:w-6 lg:h-6" fill="none">
-                <text x="5" y="18" fill="#E5DCC5" fontFamily="Georgia, serif" fontWeight="bold" fontSize="18">M</text>
-              </svg>
+              <Image
+                            src="/M.png"
+                            alt="Export packaging — bulk coconut products"
+                            width={30}  // Change this to your image's width
+  height={30}
+                          />
             </div>
             <div className="flex flex-col">
               <span className="font-editorial text-forest text-sm sm:text-base lg:text-lg font-bold tracking-tight leading-none">
